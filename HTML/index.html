@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titre de l'ongel -->
+    <title>Cour HTML</title>
+    <!-- Icone de l'ongel -->
+    <link rel="shortcut icone" href="icons8-html-5-48.png">
+</head>
+<body>
+    <nav>
+        <!-- UL: Unodrder List -->
+        <ul>
+            <li>Accueil</li>
+            <li>Boutique</li>
+            <li><a href="#form">Formulaire</a></li>
+        </ul>
+    </nav>
+    <header>
+        <!-- Un seule h1 par page -->
+        <h1>Ceci est le titre principale</h1>
+        <p>
+            coucou <b>cava</b>
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem facere architecto temporibus obcaecati distinctio dignissimos quidem corrupti qui in illo facilis exercitationem, modi, laborum dicta quas quisquam porro velit labore?
+        </p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Ordered List</h2>
+            <ol>
+                <li>Ceci est une</li>
+                <li>liste dans</li> 
+                <li>l'ordre</li>
+            </ol>
+        </section>
+        <section>
+            <h3>Image en HTML</h3>
+            <img src="./image.png" height="200" alt="image section">
+            <!-- L'Alt de l'image est pour l'accecibilite -->
+
+            <div>
+                <h4>Tableaux</h4>
+                <table border="4" cellpadding="10" cellspacing="4"  style="text-align:center"
+                >
+                    <!-- thead pour l'entete du tableau -->
+                    <thead>
+                        <!-- les lignes -->
+                        <tr>
+                            <!-- les collones -->
+                            <th>Col 1</th>
+                            <th>Col 2</th>
+                            <th>Col 3</th>
+                            <th>Col 4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr> <!--une ligne -->
+                            <!-- Rowspan:combinaison des lignes -->
+                            <td rowspan="2">Cell 1</td> 
+                            <!-- collone -->
+                            <td>Cell 2</td>
+                            <td>Cell 3</td>
+                            <td >Cell 4</td>
+                        </tr>
+                        <tr> <!--une ligne -->
+                            <!-- Cowspan:combinaison des colonnes -->
+                            <td colspan="2">Cell 5</td>
+                            <td>Cell 6</td>
+                            <td>Cell 7</td>
+                            
+                        </tr>
+                        <tr> <!--une ligne -->
+                            <td>Cell 9</td>
+                            <td>Cell 10</td>
+                            <td>Cell 11</td>
+                            <td>Cell 12</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <!-- icons en span et i -->
+                <h5><span>&#8594;</span> Les liens</h5>
+                <!-- anchor -->
+                <!-- _blank permet de creer un nouvel angler -->
+                <a href="https://htmlcheatsheet.com" target="_blank">HTML CHEAT SHEET </a>
+            </div>
+            <div>
+                <h6><i>&#127901;</i>Videos</h6>
+                <video src="./video.mp4" height="200" autoplay muted loop></video>
+            </div>
+        </section>
+        <section id="form">
+            <h2>Les formulaires</h2>
+            <form action="">
+                <!-- "for" et "id" permettent de lier le label à l'input -->
+                <label for="name">Nom</label>
+                <input type="text" id="name" placeholder="Entrer votre nom"/>
+
+                <br>
+
+                <label for="age">Entrer votre age</label>
+                <input type="number" id="age" value="18">
+
+                <br>
+
+                <!-- input de type select -->
+                <label for="gender">Genre</label>
+                <select name="" id="gender">
+                    <option value="Homme"Homme</option>
+                    <option selected="selected" value="Femme">Femme</option>
+                    <option value="Autre">Autre</option>
+                </select>
+
+                    <!-- input de type radio -->
+                    <div>
+                        <input type="radio" name="type" id="human" checked>
+                        <label for="human">humain</label>
+
+                        <input type="radio" name="type" id="dog">
+                        <label for="dog">Chiens</label>
+
+                        <input type="radio" name="type" id="cat">
+                        <label for="cat">Chat</label>
+                    </div>
+                    <textarea name=""  placeholder="Votre message..." rows="5" cols="20"></textarea>
+
+                    <br>
+                    <!-- Input de type checkbox -->
+                    <input type="checkbox" name="" id="cgv">
+                    <label for="">Accepter les conditions generales
+                    </label>
+
+                    <br>
+                    <!-- input de type submit permet de valider -->
+                    <input type="submit" value="ceci est le butoopnn pour valider le formulaire">
+                </form>
+                <button>ceci est un button</button>
+        </section>
+        <br>
+        <hr>
+        <br>
+        <section>
+            <form >
+                <label for="Date">Date</label>
+                <input type="date" id="Date">
+                <div>
+                    <label for="month">Month</label>
+                    <input type="month" id="month">
+                </div>
+                <div>
+                    <label for="time">Time</label>
+                    <input type="time" id="time">
+                </div>
+                <div>
+                    <label for="Time">Date time</label>
+                    <input type="datetime-local" id="Time">
+                </div>
+            </form>
+        </section>
+    </main>
+
+
+    <footer>
+        <!-- boite d'emails -->
+        <a href="mailto:aythmadnhylt@gmail.com">Contacter moi!</a>
+        <br>
+        <!-- fichers telchargers -->
+        <a href="notice.txt" download="notice">Telecharger la notice</a>
+
+
+    </footer>
+
+
+</body>
+</html>
