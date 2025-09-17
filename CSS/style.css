@@ -1,0 +1,132 @@
+/* p , h1{
+    color: red;
+} */
+
+/* , : ajouter autre selecteur pour avoir les memes attributs */
+
+/* class: to describe on or more attributes in the page*/
+/* specialise the select with the class  */
+
+/* h1.test{
+    color:green;
+} */
+
+/* id: to describe on or more attributes in the page */
+
+/* 
+h5#tes{
+    color: blue;
+} */
+/*  *: select all the attributes */
+
+/* *{
+    color:  orange;
+} */
+
+/* dicentent selectors سلالة */
+/* div p strong{
+    color: red;
+}
+div h2 em{
+    color: orange;
+}
+div p strong{
+    color: red;
+} */
+
+/* direct child */
+/* div > p{
+    color: yellowgreen;
+} */
+
+/* box model */
+/* 
+h1{
+    border: solid 10px red;
+    width: 50%;
+    height: 50px;
+    padding: 100px 50px 30px 200px;
+    margin : 100px 50px 30px 200px;
+
+    make the element outside in  horizontally center
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+/* width: auto -> % for width: is the % of the width of here parent */
+/* height: auto -> % for height: is the % of the height of here parent who the height is  about here content
+    -> if there is no content the height is ->  height : 0; */
+/* 
+body{
+    width:  300px;
+    height: 300px;
+    background-color: blue;
+}
+
+h1{
+    background: red;
+    width: 50%;
+    height:  50%;
+} */
+
+
+/*  -> max-height interacte with the content of the element not with the height of the browser   
+-> max width and min width interacte with the width of the browser or with here father*/
+
+/* border raduis : rotation for the cone of the border */
+/* 
+h1{
+    background-color: red;
+    border-radius: 10px;
+} */
+
+                /* block elements */
+/* block take 100% of width of ere father  */
+                /* inline elements */
+/* inline take 100% of width of here content  */
+
+/* text align  for block*/
+/*  if you write in arabic we use  "direction" ltr-> left to right or rtl -> right to left */
+/* 
+h1{
+    text-align: center ;
+} */
+
+/* text transform  uppercase or lowercase or capitalize*/
+
+/* text spacing 
+    letter-spapcing : space betwen spacing
+    word-spacing : space betwen word
+    ligne-height: space betwen lignes
+*/
+/* 
+h1{
+    letter-spacing: 20px;
+    text-align: center ;
+} */
+
+/*text decoration
+    text-decoration-line:  overline inderline line-through
+    text-decoration-color;
+    text-decoration-style: solid dashed dotted wavy
+    we somerise all in 
+    text-decoration: underline color wavy;
+    remove the line -> text-decoration: none;
+ */
+
+ /* for text only  */
+/*  test-shadow: H-shadow V-shadow Blur color;
+ */
+
+/* box-shadow: H-shadow V-shadow blur spread انتشار  color inset( داخل العنصر)   */
+
+/* wrapping التففاف النص -- white space  المسافات
+
+white-spacing: normal (make wraping)
+word-wrap: break-word; (kasr word)
+
+
+*/
+
+
+
