@@ -125,8 +125,333 @@ h1{
 white-spacing: normal (make wraping)
 word-wrap: break-word; (kasr word)
 
+white space: pre; (all spaces will be in the browser with no wrap)
+white space: pre-wrap; (all spaces will be in the browser with  wrap) 
+white space: pre-line;(space betwen ligne will be with wrap  but into the line no)
+*/
+
+/* Fonts */
+/* font-family -> change the style of font 
+web safe font or web follback font
+google fonts
+*/
+
+/* font-size -> size of the font
+    default value  for p and  normal text ->  16px = 1em = 100% of the font size in the browser
+    h1 -> 32px = 2em = 200%
+
+inherit : (الوراتة من الاب)
 
 */
+/* font style -> rotation of the text  ميلان*/
+/* font-variant -> transform the text uppercase with save of the size of the text(small caracters)
+not like text-transforme: uppercase -> transform text to uppercase but with big caracters  
+*/
+/* font-weight ->  weight of the font
+    inherit : (الوراتة من الاب)
+    font-weight:
+        100 => thin
+        200 => semi light
+        300 => light
+        400 => normal
+        500 => medium
+        600 => semi bold
+        700 => bold
+        800 => ulra bold
+        900 => black
+*/
+/*
+font-shorthand:
+font : font-style font-variant font-wight font-size/line-height font-family (font- size and font-family obligatoire )
+
+ */
+/* 
+background:
+    background-color
+    background-image : url(url of image);(the image repeat in all the browser)
+    background-repeat:  repeat , no-repeat, repeat-x(horizontal), repeat-y(vetical) 
+    backournd-attachment(scrool of the background): fixed, scroll
+    background-position: horizontal.px vertical.px, (left:rght) (top, bottom), center; if wwe make the zoom he it be in this position
+    background-size: 100% of here parent, width height, cover(cover all the element and the image then can be not good الصورة كتخصر الا كبرتي البراوزر) contain(cover all the width or  the height of the image  الصورة تغطي الطول او العرض و مكتخصرهاش);
+    background-origin: padding-box, border-box, content-box;
+    shorthand: 
+        background: background-color background-image background-repeat background-position/background-size background-origin;
+*/
+/* 
+    linearGradient:
+    background-image: linear-gradient(direction {to right top ..}, color1 %ofStart=0% %ofEnd, color2 %ofStart %ofEnd,color3 %ofStart %ofEnd=100%); 
+    transparent:الشفافية
+    */
+    /* 
+    Radial Gradient: ellipse style شكل بيضاوي default
+    backgrooud-image: radial-gradient(circle size.px at orientation(top bottom left right)
+    */
+
+    /* float: 
+    float : none, left, right;
+    العناصر تطفو خارج الاب ديالهم و بالتالي لعناصر اللي بعدها تصعد للفوق و هدا مشكل  لانه يب ان تضل العناصر الاخرى في مكانها  لهدا نستخدم clear
+    we make a div or p elemnt with class to make like حاجر بين المكونات الطائفة و الاخرى 
+    clear: left(تشتتغل مع الطواف في left), right(تشتغل مع الطواف في right), both( تشتغل معهم كلهم و هذه الاحسن)
+    */
+    /* 
+    ypu content is outide the div element so the solution is =>
+    overflow:
+    -> visible (no change) default
+    -> hidden(hide the content outside)
+    ->scroll (make scroll horisental and vertical)
+    ->auto(if we have content horizental we make scroll if not we don't the same for vetical)
+    we have overflow-x(->hidden make hide in x and scroll in y) 
+    */
+    /* 
+    ما هو مصبر المكان الاصلي؟
+    حركة العنصر ستكون بالنسبة لمن؟
+    position: static(default no change)
+    ->relative تحتفض على المكان الاصلي, و يتحرك حسب ما تريد نسبة  لمكانه الاصلي
+        top, left, right,bottom
+        ->absolute  ياخد حجم محتواه و لا يحتفظ بمكانه الاصلي و يتحرك العنصر نسبة الى الشاشة او الاى اقرب اب يحتوي على position not static
+        ->fixed لا يحتفظ بمكانه الاصلي  و يبقى تابت في مكانه حتى لو نزلنا في المتصفح
+        ->stiky اول ما يلامس  الاتجاه الدي تريد سيبقا تابت في مكانه و العناصر تاتي وراءه الى ان يل ااى نهاية ابيه بعدها سيختفي و لن يبقا تابتا
+    */
+
+    /* 
+    Z-index
+    الا بغيتي طلع شي   مكون على الاخر 
+    القيمة الافتراضية كتكون 0 و المكون اللي عندو على قيمو هو اللي كيطلع الفوق
+     */
+    
+    /* 
+    List style 
+    list-style-type: disk(onorder list), circle square,..., none;
+    list-style-position; outside, inside(no9at wch bra wla dakhl)
+    list-style-image:url(small image for the points
+    shorthand
+    list-style; type position image
+    */
+
+    /* 
+    Table style:
+
+    table-size => width, height
+
+    Table-allignement => text-alig(left, right, center)n vertical-align(top, middle, bottom)
+    Table-border => border-spacing:0(no space betwen elements in table)
+                => make border usig border:;
+*/
+
+/* 
+unit in css :
+pixel
+ N rem = font-size of root = 16px * N
+ N em = font-size of the parent * N
+
+N% vw:  N% of width of view ports
+N% vh:  N% of height of view ports
+
+calc(100% - npx); operation
+*/
+/* 
+pseudo class 
+    => :hover  nhrko mouse he cursor (mouse pointer) hovers over a box generated by the element.
+    => :active a long daghta  resses the mouse button and releases it.
+    => :empty Represents an element that has no children at all.
+    => :visited Applies once the link has been visited by the user.
+    => :link Applies to links that have not yet been visited.
+    => :focus Applies while an element has the focus (accepts keyboard or mouse events, or other forms of input).
+    => input:disabled Represents user interface elements that are in a disabled state; such elements have a corresponding enabled state.
+    => input:enabled Represents user interface elements that are in an enabled state; such elements have a corresponding disabled state.
+    => input:required  form element is :required or :optional if a value for it is, respectively, required or optional before the form it belongs to is submitted. Elements that are not form elements are neither required nor optional.
+    => input:invalid if the content is invalid
+    => input:valid if the content is valid
+    => input:checked 
+*/ 
+/*  : pseudo class
+    :: pseudo elements
+ */
+/*
+    pseudo elements
+    ::first-letter Represents the first letter of an element, if it is not preceded by any other content (such as images or inline tables) on its line
+    ::first-line Describes the contents of the first formatted line of its originating element.
+    ::selection Represents the portion of a document that has been highlighted by the user
+    p::before Represents a styleable child pseudo-element immediately before the originating element's actual content.
+    p::after Represents a styleable child pseudo-element immediately after the originating element's actual content.
+    => steps: 1 height and width of square, 2 position of the square
+*/
+/* sibling selectors
+=>adjacents sibling ( khoh li hdah mobachara) h1+p(les modifcations faites sur ce p seulement )
+=>general sibling selector  h1~p (tous les paragraphes frere de h1)
+*/
+/*
+Attribute selectors
+serch in html any element contain type attribute make this changes to it => [type]{...}
+1- [atr]
+2- element[atr] more specific
+3- [atr="value"]
+4- element[attr="value"]
+5- [attr ^="value"] start with
+6- [attr $="value"] end with
+7- [attr *="value"] containing a specified value
+8- [attr ~="value"] ontaining a specified word(independent word have space )
+9- [attr ="value" i] case sensitive
+*/
+
+/* Transform
+    change element in situation into other
+
+    transform: translate(x, y) if number is positive  he move to right if not he move to left
+    translateX(), translateY();
+    default : 0
+    transform: scale(number) = zoom in and zoom out(x,y)
+    if number is negative we reverse the element
+    default value : 1
+    transform: rotate() make rotation for the element awith content
+    transform: skew(x,y)make orientation in the element with content  like 3D
+    default : 0
+    transform:matrix(scaleX, skewY, skewX, traslateX, translateY)
+    ******
+    translate: x y;
+    scale: number;
+    rotate: degree;
+*/
+/*
+Transition: proprety(all=default)  duration timing-function->[ease, ease-in, ease-out, ease-in-out linear steps(nbrsteps) step-end step-start] delay
+*/
+
+/* 
+Animation
+=> animation-name: give a name to the element who will be annimated
+animation-duration:;
+annimation-delay: un retart avant mettre l'animation;
+animation-iteration-count: nbr repetition; (infinit)
+animation-direction: normal, reverse, alternate, alternate-reverse;
+animation-timing_function: ease linear;
+animation-fill-mode: none, forward(last frame), backwards(first frame) , both(first and last frame);
+animation-play-state: rinning, paused;
+cursor: ;
+animation: name-anim duration timing-function delay iteratation-count direction fill-mode play-state 
+@keyframe name-animation{
+    from(0%){what will start}
+    n%
+    to(100%) {what will end}
+
+}
+*/
+
+/* 
+inline and block 
+property    |   default width   |   new line    |   width, height|
+__________________________________________________________________
+block       | 100% of parentwidt| true          | respect         | with margin
+inline      | fit content       | false         | no respect       |margin in left and right
+
+
+
+display: block
+display : inline
+display : inline-block (inline elem with property of block)
+*/
+
+/* 
+visibility: hidden we hide the elemnt 
+display : none we delate the element
+opacity: <=1 transpacity
+ */
+
+/* Flex Box تخطيط الموقع  في بعد واحد 
+all this in parent
+.parent{ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap, wrap-reverse;
+    flex-flow: row wrap
+    justify-content: flex-start(sur x=  left) flex-end(reverse) left, right, center;
+    direction : column => justify content in Y
+    justufy  content->
+    space-betwen betwen elements
+    space-around : space outside the elements
+    space-evenly : equale space betwen elements
+
+
+    if flex-directin == row 
+        justify-ontent => x
+        align-items =>Y
+        alignt-content =>Y
+
+    
+    if flex-directin == column 
+        justify-ontent => Y
+        align-items =>X
+        alignt-content =>X
+        
+    align-items: stretch امتداد,  flex-start, flex-end, center
+    align-content: stretch امتداد, flex-start, flex-end, center
+    ==>content start if we have wrap not like items
+    make gap = space betwen elements
+_____________________________
+all this in child
+align-self: flex-start, flex-end, center
+
+order: 0(default) (1 the first is the last) max is in the end
+
+flex-grow:(0 default) (divize the space rest)
+flex-shrink : (1 default) انكماش
+if flex-direction == row
+    =>flex-basis = width
+if flex-direction ==  column
+    =>flex-basis = height
+
+shorthand
+flex : grow shrink basis;
+*/
+
+/* 
+Grad Box for 2D
+.parent{
+display : grid;
+grid-tmplate-columns: width1 width2 ...., auto(fit content تاخد عرض المحتوى فقط) , divize to fractions 1fr
+grid-tmplate-columns : repeat(nbrcol, width);
+grid-tmplate-rows: minmax(min,max);
+auto-fil:  the comlumn wil be autoomatique 
+minmx(npx, auto)
+
+row-gap
+gap: row column;
+
+justify-content(sur x whilewe have space e make auto not fr) :  center, start , end, space-betwen, space-arround, space-evenly;
+
+align-content (sur y if we have a height) : start end center space-betwen spac-around
+}
+
+_____________________
+child
+grid-column: start/end;
+grid-row: start/end;
+
+grid-area: name of the elements then go to parent 
+grip-template-aeas:
+"" row 1
+"" 2
+"" 3
+}
+*/
+
+/* Responsive
+
+
+@media  (مكان العرض ){
+code css
+}
+max-width  
+screen 
+
+
+
+
+
+*/
+
+
+
+
 
 
 
